@@ -1,6 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
+import { ImageService } from './shared/image.service';
 import { AppComponent } from './app.component';
 import { ImageListComponent } from './image-list/image-list.component';
 
@@ -10,9 +13,11 @@ import { ImageListComponent } from './image-list/image-list.component';
     ImageListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
