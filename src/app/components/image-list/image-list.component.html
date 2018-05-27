@@ -9,7 +9,7 @@
     <div class="column is-half is-narrow">
       <div class="field has-addons">
         <div class="control">
-          <input class="search input" (keyup.enter)="searchImage(searchQuery)" [(ngModel)]="searchQuery" placeholder="Search image">      
+          <input class="search input" [(ngModel)]="searchQuery"  (keyup.enter)="searchImage(searchQuery)" placeholder="Search image">      
         </div>
         <div class="control">      
           <button (click)="searchImage(searchQuery)" type="button" class="button is-info">Find Images</button>

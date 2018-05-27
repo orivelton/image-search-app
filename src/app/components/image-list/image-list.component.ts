@@ -9,6 +9,7 @@ export class ImageListComponent implements OnInit {
   images: any[];
   imagesFound: boolean = false;
   searching: boolean = false;
+  searchQuery;
   constructor(private _imageService: ImageService) { }
   /**
    * Function for success result
