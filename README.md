@@ -1,6 +1,6 @@
 # Image search app
 
-Image Search App is an application with Angular 6 and API of https://pixabay.com
+Image Search App is an application with Angular and API of https://pixabay.com
 
 # Demo
 
